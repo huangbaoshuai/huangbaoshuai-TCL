@@ -1,0 +1,1 @@
+"use strict";$(".header_module").load("./header.html");
