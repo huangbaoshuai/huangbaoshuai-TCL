@@ -17,6 +17,13 @@ task('image', async ()=>{
   .pipe(load.connect.reload())
 })
 
+// 处理iconfont
+task('iconfont', async ()=>{
+  src('./iconfont/*.*')
+  .pipe(dest('./dist/iconfont'))
+  .pipe(load.connect.reload())
+})
+
 // 处理sass
 task('sass', async ()=>{
   src('./sass/*.scss')
@@ -32,19 +39,28 @@ task('script', async ()=>{
   .pipe(load.connect.reload())
 })
 
+// 处理json
+task('json', async ()=>{
+  src('./data/*.json')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+})
+
+
+
 // 处理html
 task('html', async ()=>{
-  setTimeout(function(){
-    src('./html/*.html')
+    await src('./html/*.html')
     .pipe(dest('./dist/html'))
     .pipe(load.connect.reload())
-  },1000);
 })
 
 // 监听文件变化
 task('watch',async ()=>{
   watch('./img/*.*',series('image'));
+  watch('./iconfont/*.*',series('iconfont'));
   watch('./sass/*.scss',series('sass'));
+  watch('./data/*.json',series('json'));
   watch('./js/*.js',series('script'));
   watch('./html/*.html',series('html'));
 })
@@ -59,4 +75,4 @@ task('connect',async ()=>{
 })
 
 // 构建开发包
-task('dev',series('delDist','image','sass','script','html','connect','watch'))
+task('dev',series('delDist','json','iconfont','image','sass','script','html','connect','watch'))

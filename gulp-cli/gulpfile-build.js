@@ -16,6 +16,13 @@ task('image', async ()=>{
   .pipe(dest('./dist/img'))
 })
 
+// 处理iconfont
+task('iconfont', async ()=>{
+  src('./iconfont/*.*')
+  .pipe(dest('./dist/iconfont'))
+  .pipe(load.connect.reload())
+})
+
 // 处理sass
 task('sass', async ()=>{
    src('./sass/*.scss')
@@ -36,6 +43,14 @@ task('script', async ()=>{
   .pipe(dest('./dist/js'))
   .pipe(load.rev.manifest())
   .pipe(dest('./rev/js'))
+})
+
+
+// 处理json
+task('json', async ()=>{
+  src('./data/*.json')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
 })
 
 // 处理html
@@ -64,4 +79,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','image','sass','script','html','connect'))
+task('build',series('delDist','json','iconfont','image','sass','script','html','connect'))

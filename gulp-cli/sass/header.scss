@@ -200,5 +200,42 @@
     position: absolute;
     left: 0;
     top: 80px;
+    z-index: 99;
     display: none;
+    .menu_content{
+        width: 1270px;
+        height: 210px;
+        margin: 0 auto;
+        // background-color: #ff0;
+        text-align: center;
+        ul{
+            display: inline-block;
+            // background-color: #0f0;
+            margin-top: 30px;
+            overflow: hidden;
+            li{
+                width: 160px;
+                overflow: hidden;
+                float: left;
+                margin: 0 14px;
+                a{
+                    img{
+                        height: 100px;
+                    }
+                    p{
+                        height: 12px;
+                        font-size: 12px;
+                        margin-top: 8px;
+                        line-height: 12px;
+                        text-align: center;
+                        color: #333;
+                        overflow: hidden;
+                    }
+                    p:last-child{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
 }

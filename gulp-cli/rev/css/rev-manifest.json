@@ -1,5 +1,9 @@
 {
-  "header.css": "header-b42d66b05e.css",
-  "index.css": "index-38660f2774.css",
-  "reset.css": "reset-102b8484e5.css"
+  "banner.css": "banner-7dc8be61c2.css",
+  "footer.css": "footer-20596f0888.css",
+  "header.css": "header-96a36f176c.css",
+  "index.css": "index-fdea240c6b.css",
+  "layout.css": "layout-0983b32b22.css",
+  "reset.css": "reset-102b8484e5.css",
+  "swiper.css": "swiper-7485a07e5c.css"
 }

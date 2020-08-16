@@ -1,0 +1,22 @@
+.layoutWrap{
+    // position: relative;
+    width: 1270px;
+    height: 220px;
+    margin: 0 auto;
+}
+.layout{
+    width: 1270px;
+    height: 220px;
+    // margin: 0 auto;
+    text-align: center;
+    margin-top: 49px;
+    ul{
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 49px;
+        li{
+            float: right;
+            margin-right: 13px;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+.helpWrap{
+    width: 100%;
+    height: 370px;
+    background-color: #f0f0f0;
+    margin: 49px 0 0 0;
+    .help{
+        width: 1226px;
+        margin: 0 auto;
+        .footer_title{
+            width: 1226px;
+            height: 127px;
+            margin: 0 auto;
+            ul{
+                max-width: 1226px;
+                height: 100%;
+                // background-color: #f0f0f0;
+                border-bottom: 1px solid #e0e0e0;
+                li{
+                    width: 25%;
+                    float: left;
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 100px;
+                    text-align: center;
+                    a{
+                        color: #666;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 40px;
+                        height: 30px;
+                        margin-right: 6px;
+                        img{
+                            width: 36px;
+                        }
+                    }
+                }
+            }
+        }
+        .help_content{
+            width: 1226px;
+            height: auto;
+            // height: 162px;
+            padding: 40px 0 41px;
+            dl{
+                float: left;
+                margin-right: 85px;
+                dt{
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding-bottom: 20px;
+                    color: #333;
+                    font-weight: 700;                    
+                }
+                >dd{
+                    display: block;
+                    line-height: 12px;
+                    a{
+                        color: #999;
+                        outline: 0;
+                        display: inline-block;
+                        padding-bottom: 12px;
+                        font-size: 12px;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        color: #555;
+                    }
+                    .col_red{
+                        color: #f00;
+                    }
+                    .col_red:hover{
+                        color: #f00;
+                    }
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+            .no_margin{
+                margin-right: 0;
+            }
+            .last_dl{
+                float: right;
+                dt{
+                    h3{
+                        font-size: 20px;
+                        line-height: 20px;
+                        padding-bottom: 2px;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        color: red;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #999;
+                        line-height: 18px;
+                        text-align: center;
+                        font-weight: normal;
+                    }
+                }
+                dd{
+                    width: 160px;
+                    height: 36px;
+                    color: red;
+                    font-size: 12px;
+                    padding: 2px;
+                    margin-top: 20px;
+                    border: 1px solid red;
+                    display: inline-block;
+                    line-height: 36px;
+                    cursor: pointer;
+                    text-align: center;
+                    transition: 0.7s;
+                    i{
+                        font-size: 22px;
+                        float: left;
+                        padding: 0 10px 0 0;
+                        margin-left: 18px;
+                    }
+                    a{
+                        float: left;
+                    }
+                }
+                dd:hover{
+                    background-color: #f00;
+                }
+                dd:hover a{
+                    color: #fff;
+                }
+                dd:hover i{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+// 版权copyRight
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #e3e3e3;    
+    font-size: 12px;
+    color: #999;
+    padding: 0 0 49px 0;
+    a{
+        color: #999;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .copyRight{
+        width: 1226px;
+        margin: 0 auto;
+        padding: 25px 0;
+        line-height: 22px;
+        p:nth-child(1){
+            a{
+                color: #666;
+                padding: 0 15px;
+            }
+            a:nth-child(1){
+                padding-left:0;
+            }
+        }
+        p{
+            >span{
+                margin-right: 8px;
+            }
+            em{
+                float: right;
+            }
+        }
+    }
+}

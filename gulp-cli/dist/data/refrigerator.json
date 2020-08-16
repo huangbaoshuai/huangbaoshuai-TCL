@@ -1,0 +1,47 @@
+{
+    "titleImg":"../img/refrigerator-title.jpg",
+    "content":[
+        {
+            "rightbadge":"../img/xsqg.png",
+            "img":"../img/refrigerator-1.png",
+            "title":"TCL 650升对开门变频冰箱",
+            "dice":" 风冷无霜 超大空间 （醇享金）",
+            "price":"2699.00"
+        },
+        {
+            "rightbadge":"../img/xsqg.png",
+            "img":"../img/refrigerator-2.png",
+            "title":"TCL BCD-515WEPZ50典雅银 515升对开门冰箱",
+            "dice":"风冷变频冰箱",
+            "price":"2299.00"
+        },
+        {
+            "rightbadge":"../img/rqtj.png",
+            "img":"../img/refrigerator-3.png",
+            "title":"TCL282L法式多门节能冰箱",
+            "dice":"TCL BCD-282KR50流光金金属面板/电脑芯片",
+            "price":"1799.00"
+        },
+        {
+            "rightbadge":"../img/xszj.png",
+            "img":"../img/refrigerator-4.png",
+            "title":"BCD-210TWZ50典雅银 210升三门冰箱",
+            "dice":"变频风冷养鲜",
+            "price":"1499.00"
+        },
+        {
+            "rightbadge":"../img/rqtj.png",
+            "img":"../img/refrigerator-5.png",
+            "title":"BCD-408WZ50 十字对开门风冷冰箱",
+            "dice":"AAT负离子养鲜，制冷均匀不风干，风冷无霜",
+            "price":"1899.00"
+        },
+        {
+            "rightbadge":"../img/rxbk.png",
+            "img":"../img/refrigerator-6.png",
+            "title":"TCL118L小双门节能家用冰箱",
+            "dice":"单身贵族 租房必备",
+            "price":"729.00"
+        }
+    ]
+}

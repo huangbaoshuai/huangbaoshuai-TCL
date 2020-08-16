@@ -1,6 +1,10 @@
 {
-  "header.js": "header-f43f546a36.js",
-  "index.js": "index-f2a31fd65b.js",
+  "banner.js": "banner-ea083c89da.js",
+  "footer.js": "footer-d41d8cd98f.js",
+  "header.js": "header-50365b8536.js",
+  "index.js": "index-5f0458fa78.js",
   "jquery.js": "jquery-6645e2ec68.js",
+  "layout.js": "layout-d41d8cd98f.js",
+  "swiper.js": "swiper-a1e9530a70.js",
   "utils.js": "utils-2ac3dd92ec.js"
 }

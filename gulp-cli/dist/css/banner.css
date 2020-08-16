@@ -1,0 +1,120 @@
+@charset "UTF-8";
+.bannerWrap {
+  max-width: 1920px;
+  height: 550px;
+  margin: 0 auto;
+  position: relative; }
+  .bannerWrap .banner {
+    width: 1920px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative; }
+    .bannerWrap .banner .swiper-container {
+      width: 1920px;
+      height: 550px;
+      margin: 0 auto;
+      position: relative; }
+      .bannerWrap .banner .swiper-container .swiper-wrapper {
+        cursor: pointer; }
+        .bannerWrap .banner .swiper-container .swiper-wrapper .pic {
+          overflow: hidden;
+          width: 1920px; }
+      .bannerWrap .banner .swiper-container .my-bullet-active {
+        background-color: #db192a;
+        opacity: 0.8; }
+      .bannerWrap .banner .swiper-container .swiper-button-prev {
+        position: absolute;
+        left: 5%;
+        color: #fff;
+        opacity: 0.8; }
+      .bannerWrap .banner .swiper-container .swiper-button-next {
+        position: absolute;
+        right: 24%;
+        color: #fff;
+        opacity: 0.8; }
+      .bannerWrap .banner .swiper-container .wrap {
+        width: 1270px;
+        height: 550px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1; }
+      .bannerWrap .banner .swiper-container .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px; }
+    .bannerWrap .banner .banner_nav {
+      height: 550px;
+      position: absolute;
+      left: 170px;
+      top: 0;
+      z-index: 20;
+      color: #666; }
+      .bannerWrap .banner .banner_nav .ul {
+        padding-top: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 176px;
+        position: relative; }
+        .bannerWrap .banner .banner_nav .ul > li {
+          height: 67px;
+          line-height: 67px;
+          cursor: pointer;
+          padding: 0 22px 0 32px; }
+          .bannerWrap .banner .banner_nav .ul > li a {
+            color: #fff;
+            float: left;
+            font-size: 14px; }
+          .bannerWrap .banner .banner_nav .ul > li i {
+            font-size: 14px;
+            width: 14px;
+            height: 67px;
+            right: 0;
+            margin: 0 0 0 8px;
+            padding: 0;
+            color: #fff;
+            float: right;
+            font-family: '宋体'; }
+        .bannerWrap .banner .banner_nav .ul li:hover {
+          background-color: rgba(255, 255, 255, 0.9); }
+        .bannerWrap .banner .banner_nav .ul li:hover a {
+          color: #db192a; }
+        .bannerWrap .banner .banner_nav .ul li:hover i {
+          color: #db192a; }
+        .bannerWrap .banner .banner_nav .ul .banner_list {
+          width: 758px;
+          height: 550px;
+          background-color: #fff;
+          position: absolute;
+          left: 176px;
+          top: 0;
+          display: none; }
+          .bannerWrap .banner .banner_nav .ul .banner_list ul {
+            padding: 4px 10px; }
+            .bannerWrap .banner .banner_nav .ul .banner_list ul li {
+              width: 350px;
+              height: 180px;
+              float: left;
+              margin: 0 8px;
+              overflow: hidden;
+              cursor: pointer; }
+              .bannerWrap .banner .banner_nav .ul .banner_list ul li img {
+                width: 180px;
+                height: 180px;
+                float: left; }
+              .bannerWrap .banner .banner_nav .ul .banner_list ul li .dj {
+                width: 168px;
+                display: inline-block;
+                font-size: 14px;
+                margin-top: 50px;
+                vertical-align: middle; }
+                .bannerWrap .banner .banner_nav .ul .banner_list ul li .dj p {
+                  line-height: 20px;
+                  margin: 10px 0 10px 10px;
+                  font-size: 14px; }
+                .bannerWrap .banner .banner_nav .ul .banner_list ul li .dj p:nth-child(2) {
+                  color: #ff2524;
+                  font-weight: bold; }
+      .bannerWrap .banner .banner_nav ul:hover .banner_list {
+        display: block; }

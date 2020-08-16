@@ -1,0 +1,47 @@
+{
+    "titleImg":"../img/tel-title.jpg",
+    "content":[
+        {
+            "rightbadge":"../img/xptj.png",
+            "img":"../img/tel-1.png",
+            "title":"TCL 75V2 75英寸AI超智慧巨幕4K电视",
+            "dice":"TCL 75V2 75英寸大屏/95.9%屏占比/AI人工智能语音",
+            "price":"3999.00"
+        },
+        {
+            "rightbadge":"../img/rxbk.png",
+            "img":"../img/tel-2.png",
+            "title":"65Q6 65英寸超薄全场景AI电视",
+            "dice":"人工智能免遥控液晶电视",
+            "price":"3799.00"
+        },
+        {
+            "rightbadge":"../img/xszj.png",
+            "img":"../img/tel-3.png",
+            "title":"55T6 55吋全场景AI人工智能电视",
+            "dice":"免遥控24h随时唤醒/场景自动识别",
+            "price":"2399.00"
+        },
+        {
+            "rightbadge":"../img/xszj.png",
+            "img":"../img/tel-4.png",
+            "title":" 55L8 55英寸4K声控AI全面屏电视",
+            "dice":"",
+            "price":"1699.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/tel-5.png",
+            "title":"XESS 65英寸 装饰美学 浮窗全场景TV",
+            "dice":"QLED原色量子点/XESS浮窗电视",
+            "price":"19999.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/tel-6.png",
+            "title":"55Q8 55英寸全场景AI电视",
+            "dice":"旗舰画质/全场景AI",
+            "price":"3399.00"
+        }
+    ]
+}
