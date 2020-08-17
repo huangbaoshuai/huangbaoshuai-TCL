@@ -1,9 +1,11 @@
 {
-  "banner.css": "banner-7dc8be61c2.css",
-  "footer.css": "footer-20596f0888.css",
+  "banner.css": "banner-f93b68ee61.css",
+  "footer.css": "footer-5b29ef890c.css",
+  "goodsList.css": "goodsList-cef7dbaa7f.css",
   "header.css": "header-96a36f176c.css",
-  "index.css": "index-fdea240c6b.css",
+  "index.css": "index-b4a7c3f582.css",
   "layout.css": "layout-0983b32b22.css",
+  "main.css": "main-75e022c54e.css",
   "reset.css": "reset-102b8484e5.css",
   "swiper.css": "swiper-7485a07e5c.css"
 }

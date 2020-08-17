@@ -223,7 +223,7 @@ function animate(dom,attr_obj,callback){// 多属性  当前值 -> 目标值
                 }
             }
         }
-    },5);
+    },10);
 }
 
 // dom.offsetParent 指向离他最近定位父级

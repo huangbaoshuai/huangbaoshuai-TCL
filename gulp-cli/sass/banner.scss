@@ -1,21 +1,17 @@
 .bannerWrap{
-    // width: 100%;
     max-width: 1920px;
     height: 550px;
     margin: 0 auto;
-    background-color: #0ff;
     position: relative;
-    .banner_a{
-        .banner_main{
-            position: relative;
-            img{
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-            .show{
-                z-index: 10;
-            }
+    .banner_main{
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .show{
+            z-index: 10;
         }
     }
     .banner{
@@ -26,7 +22,7 @@
         right: 0;
         margin: auto;
         // background-color: #0f0;
-        z-index: 20;
+        z-index: 30;
         .prev{
             position: absolute;
             left: 250px;
@@ -71,19 +67,17 @@
         }
         // 左侧列表导航
         .banner_nav{
-            // width: 176px;
+            width: 176px;
             height: 550px;
             position: absolute;
-            left: 170px;
+            left: 20px;
             top: 0;
             z-index: 20;
             color: #666;
+            background-color: rgba(0,0,0,.5);
             .ul{
-                padding-top: 40px;
-                background-color: rgba(0,0,0,.5);
-                // background-color: #0f0;
+                margin: 40px 0;
                 width: 176px;
-                position: relative;
                 >li{
                     height: 67px;
                     line-height: 67px;
@@ -126,24 +120,26 @@
                     top: 0;
                     display: none;
                     ul{
-                        padding: 4px 10px;
+                        overflow: hidden;
+                        padding: 20px 10px;
+                        margin-top: 20px;
                         li{
                             width: 350px;
-                            height: 180px;
+                            height: 120px;
                             float: left;
-                            margin: 0 8px;
+                            margin: 0 8px 25px;
                             overflow: hidden;
                             cursor: pointer;
                             img{
-                                width: 180px;
-                                height: 180px;
+                                width: 120px;
+                                height: 120px;
                                 float: left;
                             }
                             .dj{
                                 width: 168px;
                                 display: inline-block;
                                 font-size: 14px;
-                                margin-top: 50px;
+                                margin-top: 20px;
                                 vertical-align: middle;
                                 p{
                                     line-height: 20px;
@@ -159,9 +155,19 @@
                     }
                 }
             }
-            ul:hover .banner_list{
+            .ul:hover .banner_list{
                 display: block;
             }
         }
+    }
+    .banner_a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        // background-color: #ff0;  
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 21;
     }    
 }

@@ -1,0 +1,47 @@
+{
+    "titleImg":"../img/washer-title.jpg",
+    "content":[
+        {
+            "rightbadge":"",
+            "img":"../img/washer-1.jpg",
+            "title":"TCL5.5公斤小型全自动波轮洗衣机",
+            "dice":"10程序24小时预约洗涤",
+            "price":"629.00"
+        },
+        {
+            "rightbadge":"../img/rxbk.png",
+            "img":"../img/washer-2.png",
+            "title":"TCL  7公斤全自动波轮洗衣机",
+            "dice":"XQB70-36SP宝石黑",
+            "price":"699.00"
+        },
+        {
+            "rightbadge":"../img/rqtj.png",
+            "img":"../img/washer-3.jpg",
+            "title":"TCL 8公斤变频滚筒洗衣机",
+            "dice":"16程序羽绒服/内衣洗",
+            "price":"1299.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/washer-4.png",
+            "title":"TCL 9公斤全自动波轮洗衣机",
+            "dice":"XQB90-1578NS宝石黑 ",
+            "price":"849.00"
+        },
+        {
+            "rightbadge":"../img/xszj.png",
+            "img":"../img/washer-5.png",
+            "title":"TCL9公斤变频滚筒洗衣机",
+            "dice":"变频静音滚筒洗衣机",
+            "price":"1499.00"
+        },
+        {
+            "rightbadge":"../img/xszj.png",
+            "img":"../img/washer-6.png",
+            "title":"XQG100-P300BD 10公斤洗烘变频洗衣机",
+            "dice":"快速洗烘一体，除味空气洗",
+            "price":"1749.00"
+        }
+    ]
+}

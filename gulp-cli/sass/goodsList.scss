@@ -1,0 +1,180 @@
+body{
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+.main{
+    width: 1226px;
+    min-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    .searchRes{
+        color: #666;
+        font-size: 14px;
+        width: 1226px;
+        margin: 19px auto 20px;
+        // background-color: #0ff;
+        span{
+            strong{
+                margin-right: 20px;
+                font-weight: 400;
+                color: red;
+            }
+            em{
+                margin: 0 10px;
+                color: red;
+            }
+        }
+    }
+    .searPri{
+        padding: 40px 50px;
+        background: #fff;
+        width: 1226px;
+        margin: 0 auto; 
+        overflow: hidden;
+        strong{
+            color: #333;
+            display: block;
+            float: left;
+            width: 150px;
+            line-height: 38px;
+            font-size: 14px;
+            font-weight: bold;
+        }   
+        .priRange{
+            float: left;
+            input{
+                width: 112px;
+                height: 38px;
+                line-height: 38px;
+                border: 1px solid #999;
+                margin: 0 10px;
+                padding: 0 5px;
+                color: #666;
+                opacity: .7;
+                padding: 2px 8px;
+                box-sizing: border-box;
+            }
+            .confirm{
+                display: inline-block;
+                text-align: center;
+                background: #fe0000;
+                color: #fff;
+                margin-left: 40px;
+                cursor: pointer;  
+                width: 112px;
+                height: 38px;
+                line-height: 38px; 
+                outline: 0;
+                border: 0; 
+            }
+        }
+    }
+    // 搜索内容
+    .search_content{
+        .sort_list{
+            overflow: hidden;
+            width: 1226px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+            font-size: 14px;
+            padding: 35px 0;
+            span{
+                float: left;
+                cursor: pointer;
+                margin-right: 50px;
+                color: #333;
+            }
+            .sortWeight{
+                color: #fe0000;
+            }
+        }
+        // 商品列表
+        .goodsList{
+            width: 1226px;
+            min-height: 500px;
+            ul{
+                width: 1500px;
+                min-height: 300px;
+                li{
+                    background: #fff;
+                    padding: 0;
+                    width: 400px;
+                    min-height: 415px;
+                    margin-right: 14px;
+                    margin-bottom: 14px;
+                    border: none;
+                    position: relative;
+                    text-align: center;
+                    float: left;
+                    a{
+                        display: block;
+                        img{
+                            max-width: 230px;
+                            max-height: 230px;
+                        }
+                    }
+                    .com_text{
+                        margin: -20px 20px;
+                        text-align: left;
+                        .info{
+                            margin-top: 14px;
+                            padding: 0 10px;
+                            text-align: center;
+                            line-height: 30px;
+                            font-weight: 400;
+                            font-size: 18px;
+                            strong{
+                                display: block;
+                                width: 100%;
+                                overflow: hidden;
+                                font-weight: 700;                                
+                            }
+                            p{
+                                width: 296px;
+                                margin: 2px auto 0;
+                                font-size: 12px;
+                                height: 40px;
+                                line-height: 20px;
+                                overflow: hidden;
+                                position: relative;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                color: #908f8f;
+                            }
+                            span{
+                                color: red;
+                            }
+                        }
+                        .pri{
+                            font-weight: 700;
+                            color: red;
+                            font-size: 14px;
+                            text-align: center;
+                            margin-top: 15px;
+                            line-height: 24px;
+                        }
+                        .addCart{
+                            width: 148px;
+                            height: 40px;
+                            line-height: 40px;
+                            margin: 15px auto 34px;
+                            text-align: center;
+                            border: 1px solid red;
+                            cursor: pointer;
+                            color: red;
+                            display: block;
+                            position: relative;
+                            font-size: 14px;
+                        }
+                        .addCart:hover{
+                            color: #fff;
+                            background-color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

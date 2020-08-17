@@ -6,25 +6,25 @@ const load = require('gulp-load-plugins')();
 const del = require('del');
 
 // 删除dist目录
-task('delDist',async ()=>{
+let delDist= async ()=>{
   await del('./dist');
-})
+}
 
 // 处理图片
-task('image', async ()=>{
+let image= async ()=>{
    src('./img/*.*')
   .pipe(dest('./dist/img'))
-})
+}
 
 // 处理iconfont
-task('iconfont', async ()=>{
+let iconfont= async ()=>{
   src('./iconfont/*.*')
   .pipe(dest('./dist/iconfont'))
   .pipe(load.connect.reload())
-})
+}
 
 // 处理sass
-task('sass', async ()=>{
+let sass= async ()=>{
    src('./sass/*.scss')
   .pipe(load.sassChina())
   .pipe(load.rev())
@@ -32,10 +32,10 @@ task('sass', async ()=>{
   .pipe(dest('./dist/css'))
   .pipe(load.rev.manifest())
   .pipe(dest('./rev/css'))
-})
+}
 
 // 处理js
-task('script', async ()=>{
+let script= async ()=>{
    src('./js/*.js')
   .pipe(load.rev())
   .pipe(load.babel({presets: ['@babel/env']}))
@@ -43,40 +43,43 @@ task('script', async ()=>{
   .pipe(dest('./dist/js'))
   .pipe(load.rev.manifest())
   .pipe(dest('./rev/js'))
-})
+}
 
 
 // 处理json
-task('json', async ()=>{
+let json= async ()=>{
   src('./data/*.json')
   .pipe(dest('./dist/data'))
   .pipe(load.connect.reload())
-})
+}
 
 // 处理html
-task('html', async ()=>{ 
+let html= async ()=>{ 
       await src(['./rev/**/*.json','./html/*.html'])
       .pipe(load.revCollector({replaceReved:true}))
       .pipe(load.minifyHtml())
       .pipe(dest('./dist/html'))
-})
+}
 
-// 监听文件变化
-// task('watch',async ()=>{
-//   watch('./image/*.*',series('image'));
-//   watch('./style/*.css',series('style'));
-//   watch('./script/*.js',series('script'));
-//   watch('./pages/*.html',series('html'));
-// })
 
 // 启动服务，自动刷新
-task('connect',async ()=>{
+let connect= async ()=>{
   load.connect.server({
     root: './dist',
     livereload: true,
     port: 3001
   });
-})
+}
 
 // 构建生产包
-task('build',series('delDist','json','iconfont','image','sass','script','html','connect'))
+// task('build',series('delDist','json','iconfont','image','sass','script','html','connect'))
+task('build',async()=>{
+  await delDist();
+  await json();
+  await iconfont();
+  await image();
+  await sass();
+  await script();
+  await html();
+  await connect();
+});

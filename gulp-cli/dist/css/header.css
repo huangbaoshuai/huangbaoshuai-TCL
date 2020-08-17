@@ -100,7 +100,8 @@
       height: 4px;
       position: absolute;
       bottom: 10px;
-      left: 0; }
+      left: 0;
+      z-index: 1; }
       .header .nav_left .line .nav_line {
         width: 60px;
         height: 4px;
@@ -108,7 +109,8 @@
         position: absolute;
         left: 0;
         bottom: -10px;
-        display: none; }
+        display: none;
+        z-index: 1; }
   .header .nav_right {
     height: 80px;
     line-height: 80px;

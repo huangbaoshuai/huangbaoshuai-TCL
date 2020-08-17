@@ -1,5 +1,5 @@
 (function(){
-    var ul=$('.nav_left ul');
+var ul=$('.nav_left ul');
 var nav_line=$('.nav_left .nav_line');
 var nav=document.querySelector('.nav_line');
 var left;//滑动条距离定位父级的距离
@@ -12,7 +12,7 @@ $('.header_list li').mouseenter(function () {
         animate(nav,{'left':left});
     });    
 });
-$('.header_list').mouseleave(function () {    
+$('.header_list li').mouseleave(function () {    
     animate(nav,{'left':0},function(){        
         animate(nav,{'bottom':-10},function(){
             nav.style.display='none';
@@ -22,21 +22,23 @@ $('.header_list').mouseleave(function () {
 
 
 $('.headerWrap').on('mouseenter','.slide',function () {
-    $('.menu_list').stop(true,false).slideDown();
+    $('.menu_list').stop(true,false).slideDown(300);
 });
 $('.headerWrap').on('mouseleave','.slide',function () {
-    $('.menu_list').stop(true,false).slideUp();
+    $('.menu_list').stop(true,false).slideUp(300,function(){
+        $('.menu_content ul').html('');
+    });
 });
 
 $('.menu_list').on('mouseenter',function () {
-    $('.menu_list').stop(false).slideDown();
+    $('.menu_list').stop(false).slideDown(300);
     nav_line.css('left',left);
     animate(nav,{'bottom':0},function(){
         animate(nav,{'left':left});
     });
 });
 $('.menu_list').on('mouseleave',function () {
-    $('.menu_list').stop(false).slideUp();
+    $('.menu_list').stop(false).slideUp(300);
     animate(nav,{'left':0},function(){        
         animate(nav,{'bottom':-10},function(){
             nav.style.display='none';
@@ -74,7 +76,10 @@ $('.menu_list').on('mouseleave',function () {
                 }
               });
           }
-        });
-    
+        });    
       })
+
+    $('.header').on('mouseleave',function(){
+        // $('.menu_content ul').html('');
+    })  
 })();

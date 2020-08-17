@@ -7,12 +7,21 @@ var nums=document.querySelectorAll('.num li');
 var timer;
 var showIndex=0;
 var prevIndex=0;
-animate(imgs[showIndex],{'opacity':1},function (){
-    timer=setInterval(() => {
-        moveNext();
-    }, 2000);
-});
 
+autoplay();
+function autoplay(){
+    animate(imgs[showIndex],{'opacity':1},function (){
+        timer=setInterval(()=>{
+            moveNext();     
+        }, 4000);
+    });
+}
+$('.bannerWrap').on('mouseenter',function (){
+    clearInterval(timer);
+});
+$('.bannerWrap').on('mouseleave',function (){
+    autoplay();
+});
 function moveNext(){
     imgs[prevIndex].className='';
     nums[prevIndex].className='';
@@ -55,14 +64,10 @@ next.onclick = function (){
     // 清除所有计时器
     clearInterval(timer);
     clearInterval(imgs[showIndex].timer);
-
     // 切换到下一页
     moveNext();
-
     // 开启自动播放到下一页
-    timer = setInterval(function (){
-        moveNext();
-    },3000);
+    // autoplay();
 }
 
 // 点上一页
@@ -75,9 +80,7 @@ prev.onclick = function (){
     movePrev();
 
     // 开启自动播放到下一页
-    timer = setInterval(function (){
-        moveNext();
-    },3000);
+    // autoplay();
 }
 
 for (var i = 0, len = nums.length; i < len; i++){
@@ -104,9 +107,7 @@ for (var i = 0, len = nums.length; i < len; i++){
         animate(imgs[showIndex],{'opacity':1});
 
         // 开启自动播放到下一页
-        timer = setInterval(function (){
-            moveNext();
-        },3000);
+        // autoplay();
     }
 }
 })();
@@ -116,7 +117,6 @@ for (var i = 0, len = nums.length; i < len; i++){
   
     $('.banner_nav .ul>li').on('mouseenter',function(){
       var index=$(this).index();
-      // console.log(index);
       $.ajax({
         type: "get",
         url: "../data/json2.json",
@@ -143,5 +143,8 @@ for (var i = 0, len = nums.length; i < len; i++){
           });
         }
       });
+    })
+    $('.banner_nav').on('mouseleave',function(){
+        $('.banner_list ul').html('');
     })
   })(); 

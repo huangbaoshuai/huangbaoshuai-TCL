@@ -6,6 +6,27 @@
   "description": "TCL矢量图包",
   "glyphs": [
     {
+      "icon_id": "396563",
+      "name": "向上箭头",
+      "font_class": "xiangshangjiantou",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "430707",
+      "name": "向上箭头",
+      "font_class": "xiangshangjiantou1",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "2019067",
+      "name": "向上箭头",
+      "font_class": "xiangshangjiantou2",
+      "unicode": "e7ac",
+      "unicode_decimal": 59308
+    },
+    {
       "icon_id": "755541",
       "name": "放大镜",
       "font_class": "search",

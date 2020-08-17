@@ -1,0 +1,47 @@
+{
+    "titleImg":"../img/parts-title.jpg",
+    "content":[
+        {
+            "rightbadge":"",
+            "img":"../img/parts-1.jpg",
+            "title":"XESS时尚智能美妆镜R1",
+            "dice":"XESS魔颜感光美妆镜",
+            "price":"699.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/parts-2.png",
+            "title":"XESS智能冰肌美容仪",
+            "dice":"留住肌肤水分，保持嫩滑",
+            "price":"1099.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/parts-3.jpg",
+            "title":"XESS智能V脸射频美容仪BR-1",
+            "dice":"XESS智能V脸射频美容仪",
+            "price":"1699.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/parts-4.png",
+            "title":"XESS光波双净智能牙刷D3 宫廷红",
+            "dice":"带清洁消毒盒 4大清洁模式",
+            "price":"999.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/parts-5.png",
+            "title":" TCL XESS D2元气智能牙刷(花漾粉)",
+            "dice":"元气少女粉配色// 52低分贝入耳静音/33000次/分钟振频",
+            "price":"399.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/parts-6.png",
+            "title":"TCL物联网智能门锁K1S-W",
+            "dice":"全自动开锁/智能生物识别指纹头/超B级防盗锁芯/智能场景联动/五种开锁方式",
+            "price":"2199.00"
+        }
+    ]
+}

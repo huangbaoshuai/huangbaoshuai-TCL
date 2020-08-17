@@ -1,0 +1,47 @@
+{
+    "titleImg":"../img/cj-title.jpg",
+    "content":[
+        {
+            "rightbadge":"../img/rqtj.png",
+            "img":"../img/cj-1.png",
+            "title":"TCL 3626J+5602B天然气烟灶套装组合",
+            "dice":"自清洗高速直排吸",
+            "price":"2299.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/cj-2.png",
+            "title":"TCL 侧吸式抽油烟机灶具电蒸箱套装集成灶JJZT-JCE16ZK（天然气）",
+            "dice":"",
+            "price":"13999.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/cj-3.jpg",
+            "title":"TCL嵌入式智能烘干消毒柜",
+            "dice":"60天以换代修",
+            "price":"899.00"
+        },
+        {
+            "rightbadge":"../img/rqtj.png",
+            "img":"../img/cj-4.jpg",
+            "title":"TCL80L智能控温电热水器",
+            "dice":"大容量电热水器",
+            "price":"999.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/cj-5.png",
+            "title":" TCL12L恒温智能燃气热水器",
+            "dice":"热水量足/持久续航/多维安防",
+            "price":"999.00"
+        },
+        {
+            "rightbadge":"",
+            "img":"../img/cj-6.png",
+            "title":"TCL60L变频节能速热电热水器",
+            "dice":"升级防电墙+防电闸双防保护",
+            "price":"999.00"
+        }
+    ]
+}

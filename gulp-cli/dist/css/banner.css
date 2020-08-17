@@ -3,15 +3,14 @@
   max-width: 1920px;
   height: 550px;
   margin: 0 auto;
-  background-color: #0ff;
   position: relative; }
-  .bannerWrap .banner_a .banner_main {
+  .bannerWrap .banner_main {
     position: relative; }
-    .bannerWrap .banner_a .banner_main img {
+    .bannerWrap .banner_main img {
       position: absolute;
       left: 0;
       top: 0; }
-    .bannerWrap .banner_a .banner_main .show {
+    .bannerWrap .banner_main .show {
       z-index: 10; }
   .bannerWrap .banner {
     width: 1270px;
@@ -20,7 +19,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 20; }
+    z-index: 30; }
     .bannerWrap .banner .prev {
       position: absolute;
       left: 250px;
@@ -59,17 +58,17 @@
       .bannerWrap .banner .num .active {
         background-color: red; }
     .bannerWrap .banner .banner_nav {
+      width: 176px;
       height: 550px;
       position: absolute;
-      left: 170px;
+      left: 20px;
       top: 0;
       z-index: 20;
-      color: #666; }
+      color: #666;
+      background-color: rgba(0, 0, 0, 0.5); }
       .bannerWrap .banner .banner_nav .ul {
-        padding-top: 40px;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 176px;
-        position: relative; }
+        margin: 40px 0;
+        width: 176px; }
         .bannerWrap .banner .banner_nav .ul > li {
           height: 67px;
           line-height: 67px;
@@ -104,23 +103,25 @@
           top: 0;
           display: none; }
           .bannerWrap .banner .banner_nav .ul .banner_list ul {
-            padding: 4px 10px; }
+            overflow: hidden;
+            padding: 20px 10px;
+            margin-top: 20px; }
             .bannerWrap .banner .banner_nav .ul .banner_list ul li {
               width: 350px;
-              height: 180px;
+              height: 120px;
               float: left;
-              margin: 0 8px;
+              margin: 0 8px 25px;
               overflow: hidden;
               cursor: pointer; }
               .bannerWrap .banner .banner_nav .ul .banner_list ul li img {
-                width: 180px;
-                height: 180px;
+                width: 120px;
+                height: 120px;
                 float: left; }
               .bannerWrap .banner .banner_nav .ul .banner_list ul li .dj {
                 width: 168px;
                 display: inline-block;
                 font-size: 14px;
-                margin-top: 50px;
+                margin-top: 20px;
                 vertical-align: middle; }
                 .bannerWrap .banner .banner_nav .ul .banner_list ul li .dj p {
                   line-height: 20px;
@@ -129,5 +130,13 @@
                 .bannerWrap .banner .banner_nav .ul .banner_list ul li .dj p:nth-child(2) {
                   color: #ff2524;
                   font-weight: bold; }
-      .bannerWrap .banner .banner_nav ul:hover .banner_list {
+      .bannerWrap .banner .banner_nav .ul:hover .banner_list {
         display: block; }
+  .bannerWrap .banner_a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 21; }
