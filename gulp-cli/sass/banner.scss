@@ -1,58 +1,75 @@
 .bannerWrap{
+    // width: 100%;
     max-width: 1920px;
     height: 550px;
     margin: 0 auto;
+    background-color: #0ff;
     position: relative;
-    .banner{
-        width: 1920px;
-        height: 550px;
-        margin: 0 auto;
-        position: relative;
-        .swiper-container {
-            width: 1920px;
-            height: 550px;   
-            margin: 0 auto;
+    .banner_a{
+        .banner_main{
             position: relative;
-            .swiper-wrapper{
-                cursor: pointer;
-                .pic{
-                    overflow: hidden;
-                    width: 1920px;
-                }
-            }
-            .my-bullet-active{
-                background-color: #db192a;
-                opacity: 0.8;
-            }
-            .swiper-button-prev{
-                position: absolute;
-                left: 5%;
-                color: #fff;
-                opacity: 0.8;
-            }
-            .swiper-button-next{
-                position: absolute;
-                right: 24%;
-                color: #fff;
-                opacity: 0.8;
-            }
-            .wrap{
-                width: 1270px;
-                height: 550px;
+            img{
                 position: absolute;
                 left: 0;
-                right: 0;
                 top: 0;
-                bottom: 0;
-                margin: auto;
-                z-index: 1;
             }
-            .swiper-pagination-bullet{
-                width: 10px;
-                height: 10px;
+            .show{
+                z-index: 10;
             }
         }
-        // banner_nav
+    }
+    .banner{
+        width: 1270px;
+        height: 550px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        // background-color: #0f0;
+        z-index: 20;
+        .prev{
+            position: absolute;
+            left: 250px;
+            top: 50%;
+            font-size: 46px;
+            margin-top: -23px;
+            color: #fff;
+            font-family: '宋体';
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .next{
+            position: absolute;
+            right: 35px;
+            top: 50%;
+            font-size: 46px;
+            margin-top: -23px;
+            color: #fff;
+            font-family: '宋体';
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .num{
+            overflow: hidden;
+            position: absolute;
+            right: 150px;
+            bottom: 15px;
+            z-index: 30;
+            li{
+                float: left;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: #fff;
+                margin: 0 5px;
+                font-size: 0em;
+                cursor: pointer;
+            }
+            .active{
+                background-color: red;
+            }
+        }
+        // 左侧列表导航
         .banner_nav{
             // width: 176px;
             height: 550px;
@@ -146,9 +163,5 @@
                 display: block;
             }
         }
-    }
+    }    
 }
-
-    
-
-  
