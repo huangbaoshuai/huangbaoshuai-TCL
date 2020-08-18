@@ -1,7 +1,9 @@
 {
+    "type":"air",
     "titleImg":"../img/air-title.jpg",
     "content":[
         {
+            "id":0,
             "rightbadge":"../img/rqtj.png",
             "img":"../img/air-1.png",
             "title":"1匹 钛金静音 定频 冷暖 壁挂式空调",
@@ -9,6 +11,7 @@
             "price":"1499.00"
         },
         {
+            "id":1,
             "rightbadge":"../img/rqtj.png",
             "img":"../img/air-2.png",
             "title":"柔风系列 1.5匹 一级变频 智能 凉感 空调",
@@ -16,6 +19,7 @@
             "price":"1999.00"
         },
         {
+            "id":2,
             "rightbadge":"",
             "img":"../img/air-3.png",
             "title":"柔风系列 初荷1.5匹 一级能效 变频冷 智 静音 空调",
@@ -23,6 +27,7 @@
             "price":"2399.00"
         },
         {
+            "id":3,
             "rightbadge":"",
             "img":"../img/air-4.png",
             "title":" 柔风系列 2匹新一级能效圆柱式冷暖变频柔风空调",
@@ -30,6 +35,7 @@
             "price":"4199.00"
         },
         {
+            "id":4,
             "rightbadge":"../img/rqtj.png",
             "img":"../img/air-5.png",
             "title":"极简系列 3匹 三级 变频 冷暖 圆柱 空调",
@@ -37,6 +43,7 @@
             "price":"4099.00"
         },
         {
+            "id":5,
             "rightbadge":"",
             "img":"../img/air-6.png",
             "title":"TCL大2匹1级能效变频空调",

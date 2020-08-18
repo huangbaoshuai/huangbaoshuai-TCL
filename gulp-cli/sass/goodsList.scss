@@ -128,7 +128,9 @@ body{
                                 display: block;
                                 width: 100%;
                                 overflow: hidden;
-                                font-weight: 700;                                
+                                font-weight: 700;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;//标题强制在一行显示                                
                             }
                             p{
                                 width: 296px;
@@ -174,6 +176,69 @@ body{
                         }
                     }
                 }
+            }
+            // 无商品时显示的样式
+            .not_search{
+                width: 1228px;
+                background: #fff;
+                padding: 80px 0;
+                margin: 0 auto!important;
+                color: #333;
+                display: none;
+                >p{
+                    text-align: center;
+                    font-size: 14px;
+                }
+                >div{
+                    width: 200px;
+                    height: 250px;
+                    margin: 45px auto 0;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .chanPag{
+        width: 1226px;
+        height: 100px;
+        // background-color: #0ff;
+        .padding_box{
+            float: right;
+            // width: 1226px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: right;
+            margin-top: 0;
+            // font-size: 0;
+            button{
+                font-weight: 300;
+                background: #e3e3e3;
+                color: #999;
+                font-size: 14px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                margin: 0 7px;
+                padding: 0;
+                text-align: center;
+                cursor: pointer;
+                float: left;
+                border:0;
+                font-family: '宋体';
+            }
+            span{
+                float: left;
+                font-size: 14px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                margin: 0 7px;
+                padding: 0;
+                text-align: center;
+                color: #fff!important;                
+            }
+            .active{
+                background: red;
             }
         }
     }

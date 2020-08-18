@@ -1,7 +1,9 @@
 {
+    "type":"washer",
     "titleImg":"../img/washer-title.jpg",
     "content":[
         {
+            "id":0,
             "rightbadge":"",
             "img":"../img/washer-1.jpg",
             "title":"TCL5.5公斤小型全自动波轮洗衣机",
@@ -9,6 +11,7 @@
             "price":"629.00"
         },
         {
+            "id":1,
             "rightbadge":"../img/rxbk.png",
             "img":"../img/washer-2.png",
             "title":"TCL  7公斤全自动波轮洗衣机",
@@ -16,6 +19,7 @@
             "price":"699.00"
         },
         {
+            "id":2,
             "rightbadge":"../img/rqtj.png",
             "img":"../img/washer-3.jpg",
             "title":"TCL 8公斤变频滚筒洗衣机",
@@ -23,6 +27,7 @@
             "price":"1299.00"
         },
         {
+            "id":3,
             "rightbadge":"",
             "img":"../img/washer-4.png",
             "title":"TCL 9公斤全自动波轮洗衣机",
@@ -30,6 +35,7 @@
             "price":"849.00"
         },
         {
+            "id":4,
             "rightbadge":"../img/xszj.png",
             "img":"../img/washer-5.png",
             "title":"TCL9公斤变频滚筒洗衣机",
@@ -37,6 +43,7 @@
             "price":"1499.00"
         },
         {
+            "id":5,
             "rightbadge":"../img/xszj.png",
             "img":"../img/washer-6.png",
             "title":"XQG100-P300BD 10公斤洗烘变频洗衣机",

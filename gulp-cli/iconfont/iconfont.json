@@ -6,6 +6,48 @@
   "description": "TCL矢量图包",
   "glyphs": [
     {
+      "icon_id": "3050500",
+      "name": "收藏",
+      "font_class": "collection-b",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "12813997",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "16607264",
+      "name": "icon_arrow_down",
+      "font_class": "icon_arrow_down",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "16607270",
+      "name": "icon_arrow_up",
+      "font_class": "icon_arrow_up",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "16607280",
+      "name": "icon_down",
+      "font_class": "icon_down",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "16607299",
+      "name": "icon_up",
+      "font_class": "icon_up",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
       "icon_id": "396563",
       "name": "向上箭头",
       "font_class": "xiangshangjiantou",
