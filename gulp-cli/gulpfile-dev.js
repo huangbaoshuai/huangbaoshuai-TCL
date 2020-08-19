@@ -39,9 +39,9 @@ task('script', async ()=>{
   .pipe(load.connect.reload())
 })
 
-// 处理json
+// 处理data
 task('json', async ()=>{
-  src('./data/*.json')
+  src('./data/*.*')
   .pipe(dest('./dist/data'))
   .pipe(load.connect.reload())
 })
@@ -59,7 +59,7 @@ task('watch',async ()=>{
   watch('./img/*.*',series('image'));
   watch('./iconfont/*.*',series('iconfont'));
   watch('./sass/*.scss',series('sass'));
-  watch('./data/*.json',series('json'));
+  watch('./data/*.*',series('json'));
   watch('./js/*.js',series('script'));
   watch('./html/*.html',series('html'));
 })

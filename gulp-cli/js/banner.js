@@ -10,7 +10,7 @@ var prevIndex=0;
 
 autoplay();
 function autoplay(){
-    animate(imgs[showIndex],{'opacity':1},function (){
+    animate(imgs[showIndex],{'opacity':1,'time':50},function (){
         timer=setInterval(()=>{
             moveNext();     
         }, 4000);
@@ -34,7 +34,7 @@ function moveNext(){
     imgs[showIndex].className='show';
     nums[showIndex].className='active';
     prevIndex=showIndex;
-    animate(imgs[showIndex],{'opacity':1});
+    animate(imgs[showIndex],{'opacity':1,'time':50});
 }
 
 function movePrev(){
@@ -56,7 +56,7 @@ function movePrev(){
     prevIndex = showIndex;
 
     // 开始动画
-    animate(imgs[showIndex],{'opacity':1});
+    animate(imgs[showIndex],{'opacity':1,'time':50});
 }
 
 // 点下一页
@@ -104,7 +104,7 @@ for (var i = 0, len = nums.length; i < len; i++){
         prevIndex = showIndex;
 
         // 开始动画
-        animate(imgs[showIndex],{'opacity':1});
+        animate(imgs[showIndex],{'opacity':1,'time':50});
 
         // 开启自动播放到下一页
         // autoplay();

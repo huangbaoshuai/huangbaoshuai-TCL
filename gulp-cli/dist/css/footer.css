@@ -1,5 +1,5 @@
 .helpWrap {
-  width: 100%;
+  min-width: 1226px;
   height: 370px;
   background-color: #f0f0f0;
   margin: 49px 0 0 0; }
@@ -107,7 +107,7 @@
           color: #fff; }
 
 .footer {
-  width: 100%;
+  min-width: 1226px;
   height: auto;
   background-color: #e3e3e3;
   font-size: 12px;

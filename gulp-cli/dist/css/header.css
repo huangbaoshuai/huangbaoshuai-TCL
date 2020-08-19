@@ -1,5 +1,6 @@
 .topWrap {
   width: 100%;
+  min-width: 1270px;
   height: 40px;
   background-color: #666;
   color: #666; }
@@ -61,7 +62,7 @@
       margin-top: 14px; }
 
 .headerWrap {
-  width: 100%;
+  min-width: 1270px;
   height: 80px;
   background-color: #fff;
   position: relative; }
@@ -70,8 +71,7 @@
   width: 1270px;
   height: 80px;
   margin: 0 auto;
-  color: #666;
-  overflow: hidden; }
+  color: #666; }
   .header .logo {
     margin-top: 12px;
     float: left; }
@@ -81,7 +81,7 @@
     margin-left: 100px;
     position: relative; }
     .header .nav_left ul {
-      height: 40px;
+      min-height: 40px;
       line-height: 40px;
       margin-top: 20px; }
       .header .nav_left ul li {

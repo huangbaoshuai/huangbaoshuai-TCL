@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #f2f2f2;
-  overflow-x: hidden; }
+  background-color: #f2f2f2; }
 
 .main {
   width: 1226px;
@@ -72,6 +71,8 @@ body {
       cursor: pointer;
       margin-right: 50px;
       color: #333; }
+      .main .search_content .sort_list span i {
+        margin: 0 5 px; }
     .main .search_content .sort_list .sortWeight {
       color: #fe0000; }
   .main .search_content .goodsList {
@@ -188,15 +189,26 @@ body {
         float: left;
         border: 0;
         font-family: '宋体'; }
-      .main .chanPag .padding_box span {
-        float: left;
-        font-size: 14px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        margin: 0 7px;
-        padding: 0;
-        text-align: center;
-        color: #fff !important; }
-      .main .chanPag .padding_box .active {
-        background: red; }
+      .main .chanPag .padding_box p {
+        float: left; }
+        .main .chanPag .padding_box p span {
+          float: left;
+          font-size: 14px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          margin: 0 7px;
+          padding: 0;
+          text-align: center;
+          color: #333;
+          cursor: pointer;
+          translate: all 3s; }
+        .main .chanPag .padding_box p .active {
+          background: red;
+          color: #fff; }
+        .main .chanPag .padding_box p span:first-child {
+          background: red;
+          color: #fff; }
+        .main .chanPag .padding_box p span:hover {
+          background: red;
+          color: #fff; }

@@ -1,14 +1,14 @@
 .bannerWrap{
-    max-width: 1920px;
+    width: 1920px;
     height: 550px;
     margin: 0 auto;
-    position: relative;
     .banner_main{
         position: relative;
         img{
             position: absolute;
             left: 0;
             top: 0;
+            opacity: 0.02;
         }
         .show{
             z-index: 10;
@@ -17,9 +17,9 @@
     .banner{
         width: 1270px;
         height: 550px;
-        position: absolute;
-        left: 0;
-        right: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
         margin: auto;
         // background-color: #0f0;
         z-index: 30;

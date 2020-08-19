@@ -1,6 +1,6 @@
 body{
     background-color: #f2f2f2;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 .main{
     width: 1226px;
@@ -12,7 +12,6 @@ body{
         font-size: 14px;
         width: 1226px;
         margin: 19px auto 20px;
-        // background-color: #0ff;
         span{
             strong{
                 margin-right: 20px;
@@ -84,6 +83,9 @@ body{
                 cursor: pointer;
                 margin-right: 50px;
                 color: #333;
+                i{
+                    margin: 0 5 px;
+                }
             }
             .sortWeight{
                 color: #fe0000;
@@ -226,19 +228,33 @@ body{
                 border:0;
                 font-family: '宋体';
             }
-            span{
+            p{
                 float: left;
-                font-size: 14px;
-                width: 30px;
-                height: 30px;
-                line-height: 30px;
-                margin: 0 7px;
-                padding: 0;
-                text-align: center;
-                color: #fff!important;                
-            }
-            .active{
-                background: red;
+                span{
+                    float: left;
+                    font-size: 14px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    margin: 0 7px;
+                    padding: 0;
+                    text-align: center;
+                    color: #333; 
+                    cursor: pointer;  
+                    translate: all 3s;             
+                }
+                .active{
+                    background: red;
+                    color: #fff;
+                }
+                span:first-child{
+                    background: red;
+                    color: #fff;
+                }
+                span:hover{
+                    background: red;
+                    color: #fff;
+                }
             }
         }
     }

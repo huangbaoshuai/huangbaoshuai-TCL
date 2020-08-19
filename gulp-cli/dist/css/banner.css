@@ -1,15 +1,15 @@
 @charset "UTF-8";
 .bannerWrap {
-  max-width: 1920px;
+  width: 1920px;
   height: 550px;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
   .bannerWrap .banner_main {
     position: relative; }
     .bannerWrap .banner_main img {
       position: absolute;
       left: 0;
-      top: 0; }
+      top: 0;
+      opacity: 0.02; }
     .bannerWrap .banner_main .show {
       z-index: 10; }
   .bannerWrap .banner {

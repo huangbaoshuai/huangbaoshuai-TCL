@@ -1,12 +1,16 @@
 {
-  "banner.js": "banner-ce08616638.js",
+  "banner.js": "banner-67c01f4441.js",
+  "bootstrap.js": "bootstrap-a34947c5b3.js",
+  "details.js": "details-9dcdd45dde.js",
   "footer.js": "footer-d41d8cd98f.js",
-  "goodsList.js": "goodsList-facadc600f.js",
-  "header.js": "header-6659145d99.js",
-  "index.js": "index-080f32110d.js",
+  "goodsList.js": "goodsList-bf316ded7c.js",
+  "header.js": "header-4e36125e6b.js",
+  "index.js": "index-9bda6d726b.js",
   "jquery.js": "jquery-6645e2ec68.js",
   "layout.js": "layout-d41d8cd98f.js",
-  "main.js": "main-6b9a4844ab.js",
+  "loginIn.js": "loginIn-a5cf499e13.js",
+  "main.js": "main-d90e71c1ac.js",
+  "signIn.js": "signIn-9de7f6d272.js",
   "swiper.js": "swiper-a1e9530a70.js",
-  "utils.js": "utils-0a4f7f94da.js"
+  "utils.js": "utils-ee765a8259.js"
 }

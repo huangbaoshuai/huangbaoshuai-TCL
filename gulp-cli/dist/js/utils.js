@@ -157,6 +157,8 @@ function animate(dom,attr_obj,callback){// 多属性  当前值 -> 目标值
     //     },
     //     ...
     // }
+    var time=attr_obj.time||5;
+    // console.log(attr_obj.time);
     for (var attr in attr_obj){
         // 获取当前值和目标值
         if (attr === 'opacity') {
@@ -223,7 +225,7 @@ function animate(dom,attr_obj,callback){// 多属性  当前值 -> 目标值
                 }
             }
         }
-    },10);
+    },time);
 }
 
 // dom.offsetParent 指向离他最近定位父级

@@ -4,7 +4,9 @@ $('.footer_module').load('./footer.html');
 var loc = decodeURI(location.href);//URL解析中文
 var keyword=loc.split('?')[1].split('=')[1].split('#')[0];//获取档期啊URL地址的keyword，如AI(注意清除哈希值)
 // console.log(keyword);
-$('.searchRes strong').html(keyword)
+$('.searchRes strong').html(keyword);
+
+
 //ajax加载数据
     $.ajax({
     type: "get",
@@ -12,6 +14,7 @@ $('.searchRes strong').html(keyword)
     // data: "data",
     dataType: "json",
     success: function (json){
+        $('.ipt').val(keyword);
         var arr=json;
         // console.log(arr);
         var ul=document.createElement('ul');

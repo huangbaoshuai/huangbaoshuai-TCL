@@ -1,5 +1,6 @@
 .topWrap{
     width: 100%;
+    min-width: 1270px;
     height: 40px;
     background-color: #666;
     color: #666;
@@ -77,7 +78,7 @@
 }
 // header
 .headerWrap{
-    width: 100%;
+    min-width: 1270px;
     height: 80px;
     background-color: #fff;
     position: relative;
@@ -88,7 +89,7 @@
     // background-color: #0f0;
     margin: 0 auto;
     color: #666;
-    overflow: hidden;
+    // overflow: hidden;
     // position: relative;
     // line-height: 80px;
     .logo{
@@ -104,7 +105,7 @@
         margin-left: 100px;
         position: relative;
         ul{
-            height: 40px;
+            min-height: 40px;
             line-height: 40px;
             // overflow: hidden;
             // height: 80px;

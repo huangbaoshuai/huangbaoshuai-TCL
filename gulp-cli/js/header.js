@@ -21,10 +21,10 @@ $('.header_list li').mouseleave(function () {
 });
 
 
-$('.headerWrap').on('mouseenter','.slide',function () {
+$('.headerWrap').on('mouseenter','.header_list .mes',function () {
     $('.menu_list').stop(true,false).slideDown(300);
 });
-$('.headerWrap').on('mouseleave','.slide',function () {
+$('.headerWrap').on('mouseleave','.header_list .mes',function () {
     $('.menu_list').stop(true,false).slideUp(300,function(){
         $('.menu_content ul').html('');
     });
@@ -50,7 +50,7 @@ $('.menu_list').on('mouseleave',function () {
 
 //ajax数据渲染
 (function(){
-    $('.header li').on('mouseenter',function(){
+    $('.header_list li').on('mouseenter',function(){
         var index=$(this).index();
         $.ajax({
           type: "get",
@@ -58,28 +58,26 @@ $('.menu_list').on('mouseleave',function () {
           // data: "data",
           dataType: "json",
           success: function (json) {
+            var oFragmeng = document.createDocumentFragment(); //创建文档碎片
             json.forEach((ele,i)=> {
-                if(i===index){
-                  var arr=ele.content;
-                  $('.menu_content ul').html('');
-                  arr.forEach((item,j)=>{
-                    var str=`
-                        <li>
+                if(ele.id===index){
+                    var arr=ele.content;
+                    $('.menu_content ul').html('');
+                    arr.forEach((item,j)=>{
+                    var li=document.createElement('li');
+                    li.innerHTML=`
                             <a href="#">
                                 <img src="${item.img}" alt="">
                                 <p>${item.title}</p>
                                 <p>${item.price} 元</p>
-                            </a>
-                        </li>`;
-                    $('.menu_content ul').append(str);
-                  })
+                            </a>`;
+                    oFragmeng.appendChild(li);
+                    })
+                    $('.menu_content ul').html('');
+                    $('.menu_content ul').append(oFragmeng);
                 }
-              });
+            });
           }
         });    
-      })
-
-    $('.header').on('mouseleave',function(){
-        // $('.menu_content ul').html('');
-    })  
+      }) 
 })();

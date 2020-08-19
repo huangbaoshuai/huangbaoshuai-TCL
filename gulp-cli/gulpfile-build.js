@@ -46,9 +46,9 @@ let script= async ()=>{
 }
 
 
-// 处理json
+// 处理data
 let json= async ()=>{
-  src('./data/*.json')
+  src('./data/*.*')
   .pipe(dest('./dist/data'))
   .pipe(load.connect.reload())
 }
