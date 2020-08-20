@@ -321,3 +321,49 @@ body{
     }
     
 }
+
+// 产品介绍
+.details_box{
+    // border: none;
+    border-top: 1px solid #e2e2e2;
+    background-color: #f9f9f9;
+    min-width: 1226px;
+    height: auto;    
+    overflow: hidden;
+    >div{
+        min-width: 1226px;
+        height: 76px;
+        margin: 0 auto;
+        ul{
+            width: 1226px;
+            margin: 0 auto;
+            height: 76px;
+            line-height: 76px;
+            text-align: center;
+            li{
+                padding: 0 24px;
+                position: relative;
+                font-size: 16px;
+                line-height: 76px;
+                display: inline-block;
+                a{
+                    color: #555;
+                }
+            }
+            .active a{
+                color: red;
+                border-bottom: 2px solid red;
+                line-height: 76px;
+                height: 76px;
+                display: inline-block;
+            }
+        }
+    }
+}
+.details_imgs{
+    text-align: center;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
